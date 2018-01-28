@@ -339,6 +339,10 @@ public class ConfigManager {
         return config.getInt("WorldsEdge.BorderToProtect.Nether", 123);
     }
 
+    public int getBorderToProtectEnd() {
+        return config.getInt("WorldsEdge.BorderToProtect.End", 1);
+    }
+
     public boolean getDisableDamageBleeding() {
         return config.getBoolean("Explosions.DisableDamageBleeding", true);
     }

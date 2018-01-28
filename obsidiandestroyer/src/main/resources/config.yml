@@ -110,6 +110,7 @@ WorldsEdge:
     World: 5
     # Should be obvious. Default is 123.
     Nether: 123
+    End: 1
 
 
 # Thats it :3

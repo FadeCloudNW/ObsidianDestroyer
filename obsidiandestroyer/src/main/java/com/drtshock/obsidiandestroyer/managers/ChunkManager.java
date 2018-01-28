@@ -701,6 +701,8 @@ public class ChunkManager {
                 return DamageResult.NONE;
             } else if (block.getY() >= ConfigManager.getInstance().getBorderToProtectNether() && block.getWorld().getEnvironment() == Environment.NETHER) {
                 return DamageResult.NONE;
+            } else if (block.getY() <= ConfigManager.getInstance().getBorderToProtectEnd() && block.getWorld().getEnvironment() == Environment.THE_END) {
+                return DamageResult.NONE;
             }
         }
 
@@ -977,6 +979,8 @@ public class ChunkManager {
             if (block.getY() <= ConfigManager.getInstance().getBorderToProtectNormal() && block.getWorld().getEnvironment() != Environment.THE_END) {
                 return DamageResult.NONE;
             } else if (block.getY() >= ConfigManager.getInstance().getBorderToProtectNether() && block.getWorld().getEnvironment() == Environment.NETHER) {
+                return DamageResult.NONE;
+            } else if (block.getY() <= ConfigManager.getInstance().getBorderToProtectEnd() && block.getWorld().getEnvironment() == Environment.THE_END) {
                 return DamageResult.NONE;
             }
         }
